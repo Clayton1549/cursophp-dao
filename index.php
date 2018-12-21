@@ -36,10 +36,29 @@ $user->loadbyId(4);
 
 //carrega um usuario usando ologin e a senha
 
- $usuario = new Usuario();
+/* $usuario = new Usuario();
  $usuario->login("Roberto","00002446556");
 
- echo $usuario;
+ echo $usuario;*/
+
+
+ //inserir usuario
+
+
+ $aluno =  new Usuario();
+
+ $aluno->setDeslogin("aluno");
+ $aluno->setDessenha("@fsta");
+
+
+ $aluno->insert();
+
+
+
+ echo $aluno;
+
+
+
 
 
 
