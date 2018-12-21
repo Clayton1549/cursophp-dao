@@ -44,8 +44,7 @@ $user->loadbyId(4);
 
  //inserir usuario
 
-
- $aluno =  new Usuario();
+/*$aluno =  new Usuario();
 
  $aluno->setDeslogin("aluno");
  $aluno->setDessenha("@fsta");
@@ -55,7 +54,22 @@ $user->loadbyId(4);
 
 
 
- echo $aluno;
+ echo $aluno;*/
+
+
+
+ //update
+ $usuario = new Usuario();
+
+ $usuario->loadById(4);
+
+ $usuario->update("Resende","@wewirwirwiru");
+
+
+ echo $usuario;
+
+
+
 
 
 
