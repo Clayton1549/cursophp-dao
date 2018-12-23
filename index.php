@@ -58,15 +58,27 @@ $user->loadbyId(4);
 
 
 
- //update
- $usuario = new Usuario();
+ //update - alterar um usuario
+ 
+ /*$usuario = new Usuario();
 
  $usuario->loadById(4);
 
  $usuario->update("Resende","@wewirwirwiru");
 
 
- echo $usuario;
+ echo $usuario;*/
+  $usuario = new usuario();
+
+  $usuario->loadById(7);
+
+  $usuario->delete();
+
+  echo $usuario;
+
+
+
+
 
 
 
